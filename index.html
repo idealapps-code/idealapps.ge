@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-950">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020617" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="IdealApps delivers software engineering, system administration, and DevOps services for modern businesses." />
+    <link rel="canonical" href="https://idealapps.ge/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>IDEALAPPS - Modern software engineering</title>
+    <meta property="og:site_name" content="IDEALAPPS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="IDEALAPPS - Modern software engineering" />
+    <meta property="og:description" content="We help businesses build dependable applications, secure systems, and automate delivery with practical software engineering, system administration, and DevOps." />
+    <meta property="og:url" content="https://idealapps.ge/" />
+    <meta property="og:image" content="https://idealapps.ge/social-preview.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="IDEALAPPS logo and services summary on a dark background" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IDEALAPPS - Modern software engineering" />
+    <meta name="twitter:description" content="We help businesses build dependable applications, secure systems, and automate delivery with practical software engineering, system administration, and DevOps." />
+    <meta name="twitter:image" content="https://idealapps.ge/social-preview.svg" />
+    <meta name="twitter:image:alt" content="IDEALAPPS logo and services summary on a dark background" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+      :root {
+        font-family: "FiraGo", "FiraGO", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      body {
+        font-family: "FiraGo", "FiraGO", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="min-h-full bg-slate-950 text-slate-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" x-data="{ open: false }">
+      <header class="sticky top-0 z-20 border-b border-white/10 bg-slate-950/80 backdrop-blur">
+        <div class="flex items-center justify-between py-4">
+          <a href="#" class="flex items-center gap-3 text-lg font-semibold tracking-wide text-white">
+            <span class="grid h-6 w-6 grid-cols-2 grid-rows-2 gap-0.5" aria-hidden="true">
+              <span class="h-full w-full rounded-sm bg-red-600"></span>
+              <span class="h-full w-full rounded-sm bg-amber-400"></span>
+              <span class="h-full w-full rounded-sm bg-blue-600"></span>
+              <span class="h-full w-full rounded-sm bg-green-600"></span>
+            </span>
+            <span>IDEALAPPS</span>
+          </a>
+          <nav class="hidden items-center gap-8 text-sm uppercase tracking-[0.2em] text-slate-300 md:flex">
+            <a href="#services" class="transition hover:text-white">Services</a>
+            <a href="#approach" class="transition hover:text-white">Approach</a>
+            <a href="#contact" class="transition hover:text-white">Contact</a>
+          </nav>
+          <a href="#contact" class="hidden rounded-full bg-blue-600 px-4 py-2 text-sm font-medium tracking-normal text-white transition hover:bg-blue-500 md:inline-flex">
+            Book a call
+          </a>
+          <button class="rounded-full border border-white/15 p-2 text-slate-300 md:hidden" @click="open = !open" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-5 w-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div x-show="open" x-collapse class="border-t border-white/10 py-4 md:hidden">
+          <div class="flex flex-col gap-3 text-sm text-slate-300">
+            <a href="#services" class="transition hover:text-white">Services</a>
+            <a href="#approach" class="transition hover:text-white">Approach</a>
+            <a href="#contact" class="transition hover:text-white">Contact</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="grid items-center gap-10 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:py-28">
+          <div>
+            <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/25 bg-blue-500/10 px-3 py-1 text-sm text-blue-200">
+              <span class="h-2.5 w-2.5 rounded-full bg-blue-400"></span>
+              Reliable delivery for modern infrastructure and products
+            </div>
+            <h1 class="max-w-3xl text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
+              Engineering software and operations that keep your business moving.
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+              We help businesses build dependable applications, secure systems, and automate delivery with a practical blend of software engineering, system administration, and DevOps.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#contact" class="rounded-full bg-red-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-red-500">
+                Start a project
+              </a>
+              <a href="#services" class="rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:bg-white/10">
+                Explore services
+              </a>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-4 text-sm text-slate-400">
+              <span class="rounded-full border border-white/10 bg-slate-900/70 px-3 py-2">Cloud platforms</span>
+              <span class="rounded-full border border-white/10 bg-slate-900/70 px-3 py-2">Automation & CI/CD</span>
+              <span class="rounded-full border border-white/10 bg-slate-900/70 px-3 py-2">24/7 reliability</span>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-8 shadow-2xl shadow-black/30">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm uppercase tracking-[0.25em] text-slate-400">Core capabilities</p>
+                <h2 class="mt-2 text-2xl font-semibold text-white">Built for growth</h2>
+              </div>
+            </div>
+
+            <div class="mt-8 space-y-4">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div class="flex items-start gap-3">
+                  <div class="rounded-xl bg-green-600/15 p-2 text-green-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="h-5 w-5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-white">Application delivery</h3>
+                    <p class="mt-1 text-sm text-slate-400">Modern web apps, APIs, and internal tools tailored to your workflow.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div class="flex items-start gap-3">
+                  <div class="rounded-xl bg-blue-600/15 p-2 text-blue-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="h-5 w-5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3.75 4.5 6.75v5.25c0 4.5 3.1 7.5 7.5 8.25 4.4-.75 7.5-3.75 7.5-8.25V6.75L12 3.75Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-white">Reliable operations</h3>
+                    <p class="mt-1 text-sm text-slate-400">Infrastructure hardening, monitoring, backups, and maintenance processes.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div class="flex items-start gap-3">
+                  <div class="rounded-xl bg-red-600/15 p-2 text-red-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="h-5 w-5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 2.25 4.5 13.5h6l-1.5 8.25 9-11.25h-6l1.5-8.25Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-white">Automation at scale</h3>
+                    <p class="mt-1 text-sm text-slate-400">CI/CD pipelines, deployment automation, self-healing workflows, and observability.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="py-16">
+          <div class="max-w-2xl">
+            <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Services</p>
+            <h2 class="mt-3 text-3xl font-semibold sm:text-4xl">Solutions that cover the full delivery lifecycle.</h2>
+          </div>
+
+          <div class="mt-10 grid gap-6 lg:grid-cols-3">
+            <article class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-xl shadow-black/20 backdrop-blur">
+              <div class="mb-5 inline-flex rounded-2xl bg-blue-600/15 p-3 text-blue-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-white">Software Engineering</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-400">
+                Custom web applications, APIs, and internal platforms built with clean architecture and maintainable code.
+              </p>
+              <ul class="mt-5 space-y-2 text-sm text-slate-300">
+                <li>• Product development and MVP delivery</li>
+                <li>• Backend and frontend implementation</li>
+                <li>• Performance and scalability improvements</li>
+              </ul>
+            </article>
+
+            <article class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-xl shadow-black/20 backdrop-blur">
+              <div class="mb-5 inline-flex rounded-2xl bg-green-600/15 p-3 text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-white">System Administration</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-400">
+                Server setup, monitoring, backup strategy, and day-to-day infrastructure stewardship for dependable operations.
+              </p>
+              <ul class="mt-5 space-y-2 text-sm text-slate-300">
+                <li>• Linux and Windows administration</li>
+                <li>• Security hardening and patch management</li>
+                <li>• Network and hosting support</li>
+              </ul>
+            </article>
+
+            <article class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-xl shadow-black/20 backdrop-blur">
+              <div class="mb-5 inline-flex rounded-2xl bg-amber-400/15 p-3 text-amber-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-white">DevOps</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-400">
+                CI/CD pipelines, cloud deployment, monitoring, and automation practices that reduce friction and increase uptime.
+              </p>
+              <ul class="mt-5 space-y-2 text-sm text-slate-300">
+                <li>• Automated builds and deployments</li>
+                <li>• Infrastructure as code</li>
+                <li>• Observability and incident response</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="approach" class="grid gap-8 rounded-3xl border border-white/10 bg-slate-900/70 p-8 py-16 lg:grid-cols-[0.95fr_1.05fr]">
+          <div>
+            <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Approach</p>
+            <h2 class="mt-3 text-3xl font-semibold sm:text-4xl">Practical, transparent, and built around your business.</h2>
+            <p class="mt-5 max-w-xl text-lg leading-8 text-slate-300">
+              We focus on dependable implementation, clear communication, and systems that are easy to operate and evolve over time.
+            </p>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p class="text-sm font-semibold text-white">01. Understand your goals</p>
+              <p class="mt-2 text-sm leading-7 text-slate-400">We align on the business outcome, constraints, and delivery priorities before we build.</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p class="text-sm font-semibold text-white">02. Deliver with clarity</p>
+              <p class="mt-2 text-sm leading-7 text-slate-400">You get practical solutions, visible progress, and documentation that supports long-term maintenance.</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p class="text-sm font-semibold text-white">03. Harden and automate</p>
+              <p class="mt-2 text-sm leading-7 text-slate-400">We improve reliability with automation, monitoring, and repeatable deployment processes.</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p class="text-sm font-semibold text-white">04. Scale sustainably</p>
+              <p class="mt-2 text-sm leading-7 text-slate-400">Your systems stay maintainable as your business and workload grow.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="py-16">
+          <div class="rounded-3xl border border-white/10 bg-gradient-to-r from-red-600/15 via-slate-900 to-blue-600/15 p-8 shadow-2xl shadow-black/20 sm:p-10">
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+              <div class="max-w-2xl">
+                <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Get started</p>
+                <h2 class="mt-3 text-3xl font-semibold sm:text-4xl">Let’s build dependable systems that support your next step.</h2>
+                <p class="mt-4 text-lg leading-8 text-slate-300">
+                  Whether you need a new product, infrastructure support, or faster delivery pipelines, we can help.
+                </p>
+              </div>
+              <a href="mailto:hello@idealapps.ge" class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/20">
+                Start a conversation
+                <span class="text-base">↗</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="border-t border-white/10 py-8 text-center text-sm text-slate-500">
+      &copy; <span id="year"></span> IDEALAPPS LLC
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
