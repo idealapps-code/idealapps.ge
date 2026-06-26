@@ -7,6 +7,23 @@
     <meta name="color-scheme" content="light" />
     <meta name="description" content="IdealApps delivers software engineering, system administration and DevOps services for modern businesses." />
     <link rel="canonical" href="https://idealapps.ge/" />
+    <meta name="robots" content="index, follow" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "IDEALAPPS",
+        "url": "https://idealapps.ge",
+        "logo": "https://idealapps.ge/favicon.svg",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "email": "hello@idealapps.ge",
+            "contactType": "customer support"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>IDEALAPPS - Modern software engineering</title>
     <meta property="og:site_name" content="IDEALAPPS" />
@@ -14,14 +31,15 @@
     <meta property="og:title" content="IDEALAPPS - Modern software engineering" />
     <meta property="og:description" content="We help businesses build dependable applications, secure systems and automate delivery with practical software engineering, system administration and DevOps." />
     <meta property="og:url" content="https://idealapps.ge/" />
-    <meta property="og:image" content="https://idealapps.ge/social-preview.svg" />
+    <meta property="og:image" content="https://idealapps.ge/social-preview.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="IDEALAPPS logo and services summary on a dark background" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="IDEALAPPS - Modern software engineering" />
     <meta name="twitter:description" content="We help businesses build dependable applications, secure systems and automate delivery with practical software engineering, system administration and DevOps." />
-    <meta name="twitter:image" content="https://idealapps.ge/social-preview.svg" />
+    <meta name="twitter:image" content="https://idealapps.ge/social-preview.png" />
     <meta name="twitter:image:alt" content="IDEALAPPS logo and services summary on a dark background" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -29,16 +47,22 @@
       :root {
         font-family: "FiraGo", "FiraGO", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       }
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         font-family: "FiraGo", "FiraGO", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      section[id] {
+        scroll-margin-top: 6rem;
       }
     </style>
   </head>
   <body class="min-h-full bg-slate-50 text-slate-800">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" x-data="{ open: false }">
       <header class="sticky top-0 z-20 border-b border-slate-200 bg-white/80 backdrop-blur">
-        <div class="flex items-center justify-between py-4">
-          <a href="#" class="flex items-center gap-3 text-lg font-semibold tracking-wide text-slate-900">
+        <div class="flex items-center justify-between gap-4 py-4">
+            <a href="/" class="flex items-center gap-3 text-lg font-semibold tracking-wide text-slate-900">
             <span class="grid h-6 w-6 grid-cols-2 grid-rows-2 gap-0.5" aria-hidden="true">
               <span class="h-full w-full rounded-sm bg-red-600"></span>
               <span class="h-full w-full rounded-sm bg-amber-400"></span>
@@ -47,14 +71,16 @@
             </span>
             <span>IDEALAPPS</span>
           </a>
-          <nav class="hidden items-center gap-8 text-sm uppercase tracking-[0.2em] text-slate-600 md:flex">
-            <a href="#services" class="transition hover:text-slate-900">Services</a>
-            <a href="#approach" class="transition hover:text-slate-900">Approach</a>
-            <a href="#contact" class="transition hover:text-slate-900">Contact</a>
-          </nav>
-          <a href="#contact" class="hidden rounded-full bg-blue-600 px-4 py-2 text-sm font-medium tracking-normal text-white transition hover:bg-blue-500 md:inline-flex">
-            Book a call
-          </a>
+          <div class="ml-auto flex items-center gap-4">
+            <nav class="hidden items-center gap-8 text-sm uppercase text-slate-600 md:flex">
+              <a href="#services" class="transition hover:text-slate-900">Services</a>
+              <a href="#approach" class="transition hover:text-slate-900">Approach</a>
+              <a href="#contact" class="transition hover:text-slate-900">Contact</a>
+              <a href="#contact" class="rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-500">
+                Book a call
+              </a>
+            </nav>
+          </div>
           <button class="rounded-full border border-slate-200 p-2 text-slate-600 md:hidden" @click="open = !open" aria-label="Toggle navigation">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-5 w-5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -255,11 +281,37 @@
       </main>
     </div>
 
+    <button
+      id="backToTop"
+      type="button"
+      class="fixed bottom-6 right-6 z-30 hidden rounded-full bg-slate-900 p-3 text-white shadow-lg shadow-slate-300 transition hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400"
+      aria-label="Back to top"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-5 w-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5V4.5m0 0 6.75 6.75M12 4.5 5.25 11.25" />
+      </svg>
+    </button>
+
     <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
       &copy; <span id="year"></span> IDEALAPPS LLC
     </footer>
     <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
+      const yearElement = document.getElementById('year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+
+      const backToTopButton = document.getElementById('backToTop');
+      const toggleBackToTop = () => {
+        if (!backToTopButton) return;
+        backToTopButton.classList.toggle('hidden', window.scrollY < 400);
+      };
+
+      toggleBackToTop();
+      window.addEventListener('scroll', toggleBackToTop, { passive: true });
+      backToTopButton?.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
     </script>
   </body>
 </html>

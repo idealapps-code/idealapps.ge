@@ -1,0 +1,12 @@
+IDEALAPPS LLC
+Modern software engineering, system administration and DevOps services for modern businesses.
+Build dependable applications, secure systems and automate delivery with practical engineering, reliable operations and scalable automation.
+
+Services:
+- Application delivery: web apps, APIs, internal platforms, product development and MVP delivery.
+- Reliable operations: infrastructure hardening, monitoring, backups and maintenance.
+- Automation: CI/CD pipelines, deployment automation, observability and incident response.
+- Secure systems: system administration, patch management, network and hosting support.
+
+Contact: hello@idealapps.ge
+Website: https://idealapps.ge/
