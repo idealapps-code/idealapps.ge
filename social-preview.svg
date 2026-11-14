@@ -3,11 +3,11 @@
   <rect x="48" y="48" width="1104" height="534" rx="32" fill="#F8FAFC"/>
 
   <rect x="490" y="130" width="220" height="220" rx="36" fill="#F1F5F9"/>
-  <rect x="520" y="160" width="70" height="70" rx="18" fill="#DC2626"/>
-  <rect x="600" y="160" width="70" height="70" rx="18" fill="#F59E0B"/>
-  <rect x="520" y="245" width="70" height="70" rx="18" fill="#2563EB"/>
-  <rect x="600" y="245" width="70" height="70" rx="18" fill="#16A34A"/>
+  <rect x="520" y="160" width="70" height="70" rx="18" fill="#0F172A"/>
+  <rect x="600" y="160" width="70" height="70" rx="18" fill="#334155"/>
+  <rect x="520" y="245" width="70" height="70" rx="18" fill="#64748B"/>
+  <rect x="600" y="245" width="70" height="70" rx="18" fill="#CBD5E1"/>
 
-  <text x="600" y="430" text-anchor="middle" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="84" font-weight="700">IDEALAPPS</text>
+  <text x="600" y="430" text-anchor="middle" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="84" font-weight="400">IDEALAPPS</text>
   <text x="600" y="486" text-anchor="middle" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="32">Modern software engineering</text>
 </svg>
