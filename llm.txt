@@ -1,12 +1,11 @@
 IDEALAPPS LLC
-Modern software engineering, system administration and DevOps services for modern businesses.
-Build dependable applications, secure systems and automate delivery with practical engineering, reliable operations and scalable automation.
+Engineering software and operations that keep your business moving.
+We build dependable applications, secure infrastructure and automate delivery with practical software engineering, DevOps and SecOps.
 
 Services:
-- Application delivery: web apps, APIs, internal platforms, product development and MVP delivery.
-- Reliable operations: infrastructure hardening, monitoring, backups and maintenance.
-- Automation: CI/CD pipelines, deployment automation, observability and incident response.
-- Secure systems: system administration, patch management, network and hosting support.
+- Software Engineering: Custom web applications, APIs and internal tools built with clean, maintainable architecture.
+- DevOps: Server administration, cloud infrastructure, backups, monitoring and automated CI/CD deploys.
+- SecOps: Infrastructure hardening, access control, security monitoring and proactive incident defense.
 
 Contact: hello@idealapps.ge
 Website: https://idealapps.ge/
